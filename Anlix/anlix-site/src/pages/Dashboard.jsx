@@ -1,38 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import Chart from "chart.js/auto";
 
-function LogoMark({ className = "" }) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 220 72"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-label="Anlix logo"
-      role="img"
-    >
-      <defs>
-        <linearGradient id="dashboard-brand-gradient" x1="0" y1="0" x2="220" y2="72">
-          <stop offset="0%" stopColor="#22D3EE" />
-          <stop offset="100%" stopColor="#0EA5E9" />
-        </linearGradient>
-      </defs>
-
-      <path d="M10 62L32 24L54 62H10Z" fill="url(#dashboard-brand-gradient)" />
-      <path d="M46 6H70L124 62H100L46 6Z" fill="url(#dashboard-brand-gradient)" />
-      <text
-        x="114"
-        y="63"
-        fill="currentColor"
-        fontFamily="DM Sans, sans-serif"
-        fontWeight="800"
-        fontSize="54"
-        letterSpacing="-2"
-      >
-        nlix
-      </text>
-    </svg>
-  );
+function BrandLogo({ className = "", alt = "Anlix logo" }) {
+  return <img src="/anlix-logo.png" alt={alt} className={className} />;
 }
 
 const stats = [
@@ -215,7 +185,7 @@ export default function Dashboard() {
       <aside className="sidebar">
         <div className="logo-area">
           <div className="logo-mark-wrap">
-            <LogoMark className="sidebar-logo-svg" />
+            <BrandLogo className="sidebar-logo-image" />
           </div>
           <div className="logo-text-wrap">
             <div className="logo-name">ANLIX</div>
