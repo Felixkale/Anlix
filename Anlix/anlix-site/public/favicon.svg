@@ -5,8 +5,7 @@
       <stop offset="1" stop-color="#0EA5E9"/>
     </linearGradient>
   </defs>
-
   <rect width="256" height="256" rx="56" fill="#07111E"/>
   <path d="M36 176L78 104L120 176H36Z" fill="url(#anlixGrad)"/>
-  <path d="M102 78L144 78L208 176L166 176L102 78Z" fill="url(#anlixGrad)"/>
+  <path d="M102 78H126L208 176H166L102 78Z" fill="url(#anlixGrad)"/>
 </svg>
