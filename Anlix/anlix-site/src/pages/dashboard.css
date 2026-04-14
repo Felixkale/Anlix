@@ -46,13 +46,6 @@
   overflow-y:auto;
 }
 
-.sidebar-logo-image{
-  width:44px;
-  height:44px;
-  object-fit:contain;
-  display:block;
-}
-
 .logo-area{
   padding:20px 16px;
   border-bottom:1px solid var(--border);
@@ -70,10 +63,10 @@
   flex-shrink:0;
 }
 
-.sidebar-logo-svg{
+.sidebar-logo-image{
   width:44px;
-  height:auto;
-  color:#ffffff;
+  height:44px;
+  object-fit:contain;
   display:block;
 }
 
