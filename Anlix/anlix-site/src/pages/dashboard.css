@@ -46,6 +46,13 @@
   overflow-y:auto;
 }
 
+.sidebar-logo-image{
+  width:44px;
+  height:44px;
+  object-fit:contain;
+  display:block;
+}
+
 .logo-area{
   padding:20px 16px;
   border-bottom:1px solid var(--border);
