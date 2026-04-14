@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Chart from "chart.js/auto";
 
 function BrandLogo({ className = "", alt = "Anlix logo" }) {
-  return <img src="/anlix-logo.png" alt={alt} className={className} />;
+  return <img src="/anlix%20logo.png" alt={alt} className={className} />;
 }
 
 const stats = [
@@ -264,9 +264,16 @@ export default function Dashboard() {
           />
         </nav>
 
-        <a className="logout-btn" href="/">
-          ← Back to Site
-        </a>
+        <button
+          className="logout-btn"
+          type="button"
+          onClick={() => {
+            localStorage.removeItem("anlix-auth");
+            window.location.href = "/";
+          }}
+        >
+          Logout
+        </button>
       </aside>
 
       <main className="main">
