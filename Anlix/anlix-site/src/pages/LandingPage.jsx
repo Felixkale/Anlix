@@ -10,7 +10,7 @@ const services = [
   {
     title: "Print & Large Format",
     desc: "Banners, flyers, stickers, posters, signage and marketing print with sharp, modern layouts.",
-    price: "From P120",
+    price: "From P250",
     tag: "Print"
   },
   {
@@ -22,13 +22,13 @@ const services = [
   {
     title: "Website Design",
     desc: "Responsive websites, landing pages, promo pages and branded digital experiences for local businesses.",
-    price: "From P1,500",
+    price: "From P1,500 - P30 000",
     tag: "Web"
   },
   {
     title: "Business Documents",
     desc: "Quotations, invoices, profiles, capability statements and presentation materials that look professional.",
-    price: "From P100",
+    price: "From P150",
     tag: "Business"
   },
   {
@@ -233,11 +233,11 @@ function Contact() {
           <div className="contact-stack">
             <div className="contact-row">
               <span className="contact-label">Email</span>
-              <span className="contact-value">hello@anlix.co.bw</span>
+              <span className="contact-value">felixkale@gmail.com</span>
             </div>
             <div className="contact-row">
               <span className="contact-label">Phone</span>
-              <span className="contact-value">+267 77 000 000</span>
+              <span className="contact-value">+267 73 397 584</span>
             </div>
             <div className="contact-row">
               <span className="contact-label">Location</span>
