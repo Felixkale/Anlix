@@ -1,0 +1,12 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="anlixGrad" x1="32" y1="32" x2="224" y2="224" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="256" height="256" rx="56" fill="#07111E"/>
+  <path d="M36 176L78 104L120 176H36Z" fill="url(#anlixGrad)"/>
+  <path d="M102 78L144 78L208 176L166 176L102 78Z" fill="url(#anlixGrad)"/>
+</svg>
