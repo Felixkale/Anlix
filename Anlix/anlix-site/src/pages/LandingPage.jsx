@@ -52,38 +52,8 @@ const reasons = [
   "Built to look premium on both desktop and mobile"
 ];
 
-function LogoMark({ className = "" }) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 220 72"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-label="Anlix logo"
-      role="img"
-    >
-      <defs>
-        <linearGradient id="brand-gradient" x1="0" y1="0" x2="220" y2="72">
-          <stop offset="0%" stopColor="#22D3EE" />
-          <stop offset="100%" stopColor="#0EA5E9" />
-        </linearGradient>
-      </defs>
-
-      <path d="M10 62L32 24L54 62H10Z" fill="url(#brand-gradient)" />
-      <path d="M46 6H70L124 62H100L46 6Z" fill="url(#brand-gradient)" />
-      <text
-        x="114"
-        y="63"
-        fill="currentColor"
-        fontFamily="DM Sans, sans-serif"
-        fontWeight="800"
-        fontSize="54"
-        letterSpacing="-2"
-      >
-        nlix
-      </text>
-    </svg>
-  );
+function BrandLogo({ className = "", alt = "Anlix logo" }) {
+  return <img src="/anlix-logo.png" alt={alt} className={className} />;
 }
 
 function Header() {
@@ -93,7 +63,7 @@ function Header() {
     <header className="site-header">
       <div className="container nav-shell">
         <a href="#home" className="brand" aria-label="Anlix home">
-          <LogoMark className="brand-logo" />
+          <BrandLogo className="brand-logo-image" />
         </a>
 
         <button
@@ -163,7 +133,7 @@ function Hero() {
             </div>
 
             <div className="hero-brand-panel">
-              <LogoMark className="hero-panel-logo" />
+              <BrandLogo className="hero-panel-logo-image" />
             </div>
 
             <div className="hero-mini-grid">
@@ -224,7 +194,7 @@ function About() {
       <div className="container about-grid">
         <div className="about-panel">
           <div className="about-panel-glow" />
-          <LogoMark className="about-logo" />
+          <BrandLogo className="about-logo-image" />
           <div className="about-big-word">ANLIX</div>
         </div>
 
