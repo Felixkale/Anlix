@@ -4,7 +4,6 @@ import LandingPage from "./pages/LandingPage";
 import Dashboard from "./pages/Dashboard";
 import LoginPage from "./pages/LoginPage";
 import "./styles.css";
-import "./pages/dashboard.css";
 import "./pages/login.css";
 
 function ProtectedRoute({ children }) {
